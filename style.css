@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.top{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.top h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.top p {
+    margin: 0;
+    font-style: italic;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-content a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-content button{
+    opacity: 0;
+}
+
+.main-content button:hover{
+    cursor: pointer;
+}
+
+.main-content p{
+    font-size: 15px;
+}
+
+#podbitka{
+    padding-bottom: 22px;
+}
+
+.main-content:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-content h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.main-content table {
+    width: 20%;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 20px;
+    border-collapse: separate;
+    font-size: 25px;
+}
+
+.main-content td {
+    padding: 44px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+    transition: background-color 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.main-content td a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-content td:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.main-content td:hover {
+    background-color: #eee;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.main-content td.clicked{
+        transform: scale(0.9);
+        transition: transform 0.3s ease-in-out;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-form:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.contact-form p {
+    color: #666;
+    font-style: italic;
+}
+
+.contact-form li{
+    font-size: 20px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.25s ease-in-out;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover{
+    transform: scale(1.015);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+#php{
+    text-align: center;
+    margin: auto;
+}
+
+#ref{
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+}
+
+button:hover{
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+.faq {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.faq:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.faq h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.faq h3 {
+    color: #555;
+    margin-top: 15px;
+}
+
+.faq p {
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}

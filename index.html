@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosenka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <h1>Skład drewna SOSENKA</h1>
+        <p>Największy skład drewna w okolicy!</p>
+    </header>
+
+    <section class="main-content">
+        <h2>Dostępne rodzaje drewna:</h2>
+        <table>
+            <tr>
+                <td style='background-image: url("pod.jfif");' id="podbitka">
+                    <div id="podbitkaContent">
+                        PODBITKA
+                        <p>i drzewo tarasowe</p>
+                    </div>
+                </td>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const clickableBlock = document.getElementById('podbitka');
+
+                    clickableBlock.addEventListener('click', function() {
+                        clickableBlock.classList.add('clicked');
+
+                        setTimeout(function(){clickableBlock.classList.remove('clicked');}, 300)
+                        setTimeout(function() {
+                            window.location.href = 'podpod.html';
+                        }, 700);
+                    });
+                });
+                </script>
+
+                <td style='background-image: url("opa.jfif");' id="opal">
+                    <div id="opalContent">
+                        OPAŁOWE
+                    </div>
+                </td>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const clickableBlock = document.getElementById('opal');
+
+                    clickableBlock.addEventListener('click', function() {
+                        clickableBlock.classList.add('clicked');
+
+                        setTimeout(function(){clickableBlock.classList.remove('clicked');}, 300)
+                        setTimeout(function() {
+                            window.location.href = 'podopa.html';
+                        }, 700);
+                    });
+                });
+                </script>
+                <td style='background-image: url("tar.jfif");' id="tar">
+                    <div>
+                        TARCICA
+                    </div>
+                </td>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const clickableBlock = document.getElementById('tar');
+
+                    clickableBlock.addEventListener('click', function() {
+                        clickableBlock.classList.add('clicked');
+
+                        setTimeout(function(){clickableBlock.classList.remove('clicked');}, 300)
+                        setTimeout(function() {
+                            window.location.href = 'podtar.html';
+                        }, 700);
+                    });
+                });
+                </script>
+                <td style='background-image: url("susz.jfif");' id="susz">
+                    <div>
+                        SUSZONE
+                    </div>
+                </td>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const clickableBlock = document.getElementById('susz');
+
+                    clickableBlock.addEventListener('click', function() {
+                        clickableBlock.classList.add('clicked');
+
+                        setTimeout(function(){clickableBlock.classList.remove('clicked');}, 300)
+                        setTimeout(function() {
+                            window.location.href = 'podsusz.html';
+                        }, 700);
+                    });
+                });
+                </script>
+                <td style="background-color: aqua;" id="wie">
+                    <div>
+                        WIĘŹBA
+                    </div>
+                </td>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const clickableBlock = document.getElementById('wie');
+
+                    clickableBlock.addEventListener('click', function() {
+                        clickableBlock.classList.add('clicked');
+
+                        setTimeout(function(){clickableBlock.classList.remove('clicked');}, 300)
+                        setTimeout(function() {
+                            window.location.href = 'podwie.html';
+                        }, 700);
+                    });
+                });
+                </script>
+            </tr>
+        </table>
+    </section>
+
+    <section class="contact-form">
+        <h2>Kontakt</h2>
+        <p>Skontaktuj się z nami, aby złożyć zamówienie lub uzyskać więcej informacji.<br>
+        <b>Możesz do nas zadzwonić! Numery telefonów: 
+        <ul>
+            <li>Dominik: +48 783 297 803</li>
+            <li>Tomek: +48 608 796 873</li>
+            <li>Marek: +48 724 442 440</li>
+        </ul></b></p>
+        <p>Tutaj możesz wysłać wiadomość E-Mail</p>
+        <form action="wyslanie.php" method="post">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" class="inp" required>
+
+            <label for="email">Adres e-mail:</label>
+            <input type="email" id="email" name="email" class="inp" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="5" class="inp" required></textarea>
+
+            <button type="submit" name="send">Wyślij</button>
+        </form>
+    </section>
+    <section class="faq">
+        <h2>Pytania</h2>
+        <h3>Jakie rodzaje drewna oferujecie?</h3>
+        <p>Oferujemy podbitkę, drewno opałowe, drewno tartaczne, suszone oraz więźbę.</p>
+
+        <h3>Jak mogę złożyć zamówienie?</h3>
+        <p>Aby złożyć zamówienie, skorzystaj z formularza kontaktowego powyżej lub zadzwoń pod podane numery telefonu, a my odpowiemy najszybciej, jak to możliwe.</p>
+        
+        <h3>Jakie są ceny?</h3>
+        <p>Żeby zapoznać się z cenami prosimy o kontakt</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sosenka. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
