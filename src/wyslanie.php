@@ -1,5 +1,5 @@
 <?php
-      /*Limit wysłanych wiadomości w przeciągu 5h (zapobieganie SPAMu)*/
+      /*This part is responsible for preventing from spam messages*/
       session_start();
 
       $ip_address = $_SERVER['REMOTE_ADDR'];
@@ -30,7 +30,7 @@
       $_SESSION['form_submissions'][$ip_address][] = time();
 
 
-            /*Wysłanie widomości E-Mail*/
+            /*In this part of code, an email is sent to a specific adress from another specific adress*/
       
               $to = "sosenkaslup@gmail.com";
               if(filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
